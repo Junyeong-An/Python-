@@ -46,7 +46,7 @@ while True:
         print("숫자를 입력해주세요")
         continue
     a = int(a)
-3
+
     d = input("연산자를 입력하세요:")
     if d == "c":
         continue
