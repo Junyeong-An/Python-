@@ -3,11 +3,39 @@
 # 사용자로부터 "숫자 연산자 숫자" 를 입력받아 결과값을 출력해주세요.
 # 사용자가 c를 입력하면 다시 입력받아야하고 e를 입력하면 계산기가 종료되어야합니다.
 # e를 입력하기 전까지는 계산기가 끝나면 안됩니다.
-# 숫자나 연산자를 잘못 입력하면 다시 입력받도록 해주세요.
+# 숫자나 연산자를 잘못 입력하면 다시 입력받도록 해주세요. 계산기를 기능별로 함수로 만들고 계산결과는 txt파일에 저장
 a = "a"
 b = "b"
 d = "d"
+r = 0
 while True:
+    def sum(num1,num2):
+        res=('%d + %d = %d\n ' % (num1,num2,num1+num2))
+        print( res)
+        file.write(res)
+        
+
+    def minus(num1,num2):
+    
+        res=('%d - %d = %d\n ' % (num1,num2,num1-num2))
+        print( res)
+        file.write(res)
+        
+    
+    def times(num1,num2):
+    
+        res=('%d * %d = %d\n ' % (num1,num2,num1*num2))
+        print( res)
+        file.write(res)
+        
+    
+    def divided(num1,num2):
+
+        res=('%d / %d = %d\n ' % (num1,num2,num1/num2))
+        print( res)
+        file.write(res)
+        
+    file =open("C:\\수업\\파이썬\\a.txt","a")
     print('사칙연산 계산기 입니다. 숫자나 연산자를 잘못 입력하면 처음으로 돌아갑니다.')
     a = (input("첫 번째 수를 입력하세요:"))
     if a == "c":
@@ -18,7 +46,7 @@ while True:
         print("숫자를 입력해주세요")
         continue
     a = int(a)
-
+3
     d = input("연산자를 입력하세요:")
     if d == "c":
         continue
@@ -40,12 +68,13 @@ while True:
     b = int(b)
 
     if d == "+":
-        print("%d+%d=%d" % (a, b, a + b))
+       sum(a,b)
     elif d == "-":
-        print("%d-%d=%d" % (a, b, a - b))
+        minus(a,b)
     elif d == "*":
-        print("%d*%d=%d" % (a, b, a * b))
+        times(a,b)
     elif d == "/":
-        print("%d/%d=%d" % (a, b, a / b))
+        divided(a,b)
 
 print("계산기 종료")
+file.close()
