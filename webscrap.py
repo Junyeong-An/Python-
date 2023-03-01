@@ -19,7 +19,6 @@ def extract_jobs(term):
         position=job.find('h2',itemprop="title")
         location=job.find('div',class_="location")
         print(company,position,location)    
-
     # write your ✨magical✨ code here
     else:
          print("Can't get jobs.")
