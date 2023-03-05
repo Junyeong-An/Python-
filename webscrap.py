@@ -8,9 +8,11 @@ def extract_jobs(term):
     request = requests.get(url, headers={"User-Agent": "Kimchi"})
     results = []
     if request.status_code == 200:
-      
+    
       print("good")
+
       soup = BeautifulSoup(request.text, "html.parser")
+      
       jobs=soup.find_all('tr',class_="job")
       
       for job in jobs:
