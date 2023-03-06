@@ -23,7 +23,7 @@ def extract_jobs(term):
         print(company,position,location)    
     # write your ✨magical✨ code here
     else:
-         print("Can't get jobs. try again")
+         print("Can't get jobs. try again!")
     return results
 
 
