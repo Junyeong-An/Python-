@@ -6,4 +6,5 @@ elif a==b or a==c:
 elif b==c:
   print(1000+(b*100))
 else:
+  
   print(max(a,b,c)*100)
