@@ -6,6 +6,5 @@ while True:
         break;
     elif n==n[::-1]:
         print("yes")
-    else:
-        
+    else:    
         print("no")
