@@ -18,7 +18,6 @@ class player(human):
         damage=self.AD-enemy1.DP
         enemy1.HP=enemy1.HP-damage
 
-
 class enemy(human):
     def __init__(self,DP):
         self.DP = DP
