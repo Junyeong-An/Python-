@@ -4,5 +4,6 @@ list_of_list=[
     [8, 9]
 ]
 
+
 for items in list_of_list:
     print(items)
