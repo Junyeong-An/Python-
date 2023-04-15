@@ -5,6 +5,5 @@ dictionary={
     "origin": "필리핀"
 }
 
-
 for key in dictionary:
     print(key, ":",dictionary[key])
