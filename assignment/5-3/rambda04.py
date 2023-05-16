@@ -12,4 +12,5 @@ books = [{
 print("# 가격 오름차순 정렬")
 books.sort(key=lambda book: book["가격"])
 for book in books:
+    
     print(book)
