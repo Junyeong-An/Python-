@@ -7,6 +7,7 @@ students = [
     {"name": "윤명월", "korean": 64, "math": 88, "english": 92, "science": 92},
 ]
 
+
 print("이름", "총점", "평균", sep="\t")
 
 for student in students:
